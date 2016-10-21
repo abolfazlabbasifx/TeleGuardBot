@@ -256,25 +256,18 @@ function create_config( )
     "webshot",
     "welcome"
     },
-    sudo_users = {122774063},--Sudo users
+    sudo_users = {249900391},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Sbss Bot V3
-    An Advanced Anti Spam Bot Forked On TeleSeed
+    about_text = [[ Tele Guard
+	 Admin : @AbolfazlAbbasisofficial
+	 Channel : @TeleGuardTM
+	 Buy : @TeleGuardPV_Bot
+	 تله گارد
+	 ادمین : @AbolfazlAbbasisofficial
+	 کانال : @TeleGuardTM
+	 خرید : @TeleGuardPV_Bot
     
-    Develpoed By:
-    @Mr_Ah_S
-    
-    Special Thanks To:
-    Mehr Pouya
-    Arman
-    IM/-\N
-    Creed Is Dead
-    
-    Powered By @Sbss_Team
-    
-    #Open Source
-    https://github.com/SbssTeam/Sbss
 ]],
     help_text_realm = [[
 See Patterns In Github
