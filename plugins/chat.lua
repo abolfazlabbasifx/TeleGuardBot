@@ -23,8 +23,8 @@ end
 if msg.text == "Zac" then
   return "Nagaeedim"
 end
-if msg.text == "Sbss" then
-  return "Is the best"
+if msg.text == "Guard" then
+  return "is the best"
 end
 if msg.text == "Sbss" then
   return "Is the best"
@@ -59,11 +59,20 @@ end
 if msg.text == "خدافظ" then
   return "Bye Bye"
 end
-if msg.text == "Mr Ahs" then
+if msg.text == "ابولفضل" then
   return "چیکار داری بابامو؟"
 end
-if msg.text == "@Mr_Ah_s" then
+if msg.text == "abolfazl" then
   return "چیکار داری بابامو؟"
+end
+if msg.text == "ابوالفضل" then
+  return "چیکار داری بابامو؟"
+end
+if msg.text == "ربات" then
+  return "بله بگو" 
+end
+if msg.text == "خرید" then
+  return "جهت خرید ربات به ایدی رو به رو مراجعه کنید @TeleGuardPv_bot"
 end
 end
 
@@ -86,7 +95,11 @@ return {
     "^[Ss]lm$",
     "^SBSS$",
     "^[Ss]bss$",
-    }, 
+	"^[Gg]urad$",
+	"^ابوالفضل$",
+	"^ابولفضل$",
+	"^ربات$",
+	"^خرید$",
   run = run,
   pre_process = pre_process
 }
