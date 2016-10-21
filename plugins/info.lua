@@ -1,5 +1,5 @@
 do
-local AmirSbss = 122774063
+local AbolfazlAbbasi = 2499003941
 
 local function setrank(msg, name, value) -- setrank function
   local hash = nil
@@ -26,8 +26,8 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
 	local hash = 'rank:'..extra.chat2..':variables'
 	local value = redis:hget(hash, result.id)
     if not value then
-	 if result.id == tonumber(AmirSbss) then
-	   text = text..'Rank : Amir Sbss \n\n'
+	 if result.id == tonumber(AbolfazlAbbasi)then
+	   text = text..'Rank : AbolfazlAbbasi \n\n'
 	  elseif is_admin2(result.id) then
 	   text = text..'Rank : Admin \n\n'
 	  elseif is_owner2(result.id, extra.chat2) then
@@ -65,7 +65,7 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
   local hash = 'rank:'..extra.chat2..':variables'
   local value = redis:hget(hash, result.id)
   if not value then
-	 if result.id == tonumber(AmirSbss) then
+	 if result.id == tonumber(AbolfazlAbbasi) then
 	   text = text..'Rank : Amir Sbss \n\n'
 	  elseif is_admin2(result.id) then
 	   text = text..'Rank : Admin \n\n'
@@ -103,7 +103,7 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
 	local hash = 'rank:'..result.to.id..':variables'
 		local value = redis:hget(hash, result.from.id)
 		 if not value then
-		    if result.from.id == tonumber(AmirSbss) then
+		    if result.from.id == tonumber(AbolfazlAbbasi) then
 		       text = text..'Rank : Amir Sbss \n\n'
 		     elseif is_admin2(result.from.id) then
 		       text = text..'Rank : Admin \n\n'
@@ -171,9 +171,9 @@ local function run(msg, matches)
 	if hash then
 	  local value = redis:hget(hash, msg.from.id)
 	  if not value then
-		if msg.from.id == tonumber(AmirSbss) then
+		if msg.from.id == tonumber(AbolfazlAbbasi) then
 		 text = text..'Rank : Amir Sbss \n\n'
-		  send_document(get_receiver(msg), "/root/robot/amirsbss.webp", ok_cb, false)
+		  send_document(get_receiver(msg), "/root/robot/AbolfazlAbbasi.webp", ok_cb, false)
 		elseif is_sudo(msg) then
 		 text = text..'Rank : Sudo \n\n'
 			send_document(get_receiver(msg), "/root/robot/sudo.webp", ok_cb, false)
